@@ -1,203 +1,193 @@
-/* Genel Stiller */
-body {
-    font-family: Arial, sans-serif;
+/* Global Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
     overflow-x: hidden;
 }
 
 /* Header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #333;
+#header {
+    background-color: #001e3c;
     color: white;
-    animation: slideDown 1s ease-out;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
 }
 
-header .logo img {
-    height: 50px;
-    animation: fadeInLogo 2s ease-in-out;
+#header .logo h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
+.navbar {
+    text-align: center;
+    margin-top: 20px;
 }
 
-header nav ul li {
-    display: inline;
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar ul li {
+    display: inline-block;
     margin: 0 15px;
 }
 
-header nav ul li a {
+.navbar ul li a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-size: 1.2em;
+    font-weight: 600;
     position: relative;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-header nav ul li a:hover {
-    color: #ff6f61;
+.navbar ul li a:hover {
+    color: #ffd700;
+    transform: scale(1.1);
 }
 
-header nav ul li a::after {
+.navbar ul li a::after {
     content: '';
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #ff6f61;
-    left: 0;
+    background-color: #ffd700;
     bottom: -5px;
+    left: 0;
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
 
-header nav ul li a:hover::after {
+.navbar ul li a:hover::after {
     transform: scaleX(1);
 }
 
-/* Hero Section */
-.hero {
-    background: #333;
-    color: white;
+/* Ana Sayfa */
+.section {
     padding: 100px 20px;
     text-align: center;
-    animation: fadeIn 2s ease-out;
-}
-
-.hero h1 {
-    font-size: 3em;
-    margin: 0;
-}
-
-.hero p {
-    font-size: 1.3em;
-    margin-top: 20px;
-}
-
-/* Blog Content */
-.content {
-    padding: 40px 20px;
-    background-color: white;
-}
-
-.blog-post {
-    margin-bottom: 30px;
+    min-height: 100vh;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    transition: opacity 0.5s ease-in-out;
     opacity: 0;
-    transform: translateY(50px);
-    animation: fadeUp 1.2s forwards;
 }
 
-.blog-post h2 {
-    color: #333;
-    font-size: 2.5em;
+.section.active {
+    opacity: 1;
 }
 
-.blog-post p {
-    font-size: 1.1em;
+.section-title {
+    font-size: 3em;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #001e3c;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section-description {
+    font-size: 1.5em;
+    margin-bottom: 30px;
     color: #555;
 }
 
-/* Delayed Animation */
-.fade-in {
-    animation-delay: 0.5s;
+/* Feature Cards */
+.feature-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
 }
 
-.fade-in.delay-1 {
-    animation-delay: 1s;
-}
-
-@keyframes fadeUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Subscription Form Animation */
-.subscribe {
-    background-color: #f9f9f9;
+.feature-card {
+    background-color: #f7f7f7;
     padding: 30px;
+    border-radius: 10px;
+    width: 30%;
     text-align: center;
-    animation: slideUp 1s ease-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.subscribe h2 {
-    font-size: 2.5em;
-    color: #333;
+.feature-card:hover {
+    transform: translateY(-10px);
 }
 
-.subscribe input {
-    padding: 10px;
-    width: 300px;
-    margin-right: 10px;
-    font-size: 1em;
-    border: 2px solid #ccc;
-    border-radius: 5px;
+.feature-title {
+    font-size: 1.8em;
+    margin-bottom: 15px;
 }
 
-.subscribe button {
-    padding: 10px 20px;
+.feature-description {
     font-size: 1.1em;
-    cursor: pointer;
-    background-color: #ff6f61;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
 }
 
-.subscribe button:hover {
-    background-color: #e05c4e;
+/* Image wrapper */
+.image-wrapper img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.subscribe input:focus {
-    border-color: #ff6f61;
-}
-
-@keyframes slideUp {
-    from {
+/* Animasyon */
+@keyframes fadeIn {
+    0% {
         opacity: 0;
         transform: translateY(50px);
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInLogo {
-    0% {
-        opacity: 0;
-        transform: scale(0);
-    }
     100% {
         opacity: 1;
-        transform: scale(1);
+        transform: translateY(0);
     }
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    background-color: #333;
+    background-color: #001e3c;
     color: white;
-    padding: 20px;
-    font-size: 1.2em;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Mobil Uyumlu Tasarım */
+@media (max-width: 768px) {
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .feature-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-card {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .section-title {
+        font-size: 2.5em;
+    }
 }
