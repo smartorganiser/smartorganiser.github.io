@@ -1,18 +1,23 @@
-// Sayfa yüklemesi ile animasyonları başlat
-document.addEventListener('DOMContentLoaded', function () {
-    const sections = document.querySelectorAll('.section');
-    
-    window.addEventListener('scroll', () => {
-        sections.forEach((section) => {
-            if (isInViewport(section)) {
-                section.classList.add('active');
-            }
-        });
+// Sayfa yüklendiğinde animasyonlar için başlangıç
+document.addEventListener('DOMContentLoaded', () => {
+    const sectionElements = document.querySelectorAll('.section');
+    sectionElements.forEach((section) => {
+        section.classList.add('fade-in');
     });
-
-    // Scroll ile görünürlük kontrolü
-    function isInViewport(el) {
-        const rect = el.getBoundingClientRect();
-        return rect.top >= 0 && rect.bottom <= window.innerHeight;
-    }
 });
+
+// Scroll ile animasyon ekleme
+window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('.section');
+    sections.forEach((section) => {
+        if (isElementInViewport(section)) {
+            section.classList.add('visible');
+        }
+    });
+});
+
+// Elementin görünür olup olmadığını kontrol etme fonksiyonu
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (rect.top >= 0 && rect.bottom <= window.innerHeight);
+}
