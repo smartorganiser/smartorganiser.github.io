@@ -1,7 +1,7 @@
-// Animasyonları tetiklemek için scroll dinleyicisi
+// Sayfa yüklemesi ile animasyonları başlat
 document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('.section');
-
+    
     window.addEventListener('scroll', () => {
         sections.forEach((section) => {
             if (isInViewport(section)) {
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Scroll ile element görünürse aktif et
+    // Scroll ile görünürlük kontrolü
     function isInViewport(el) {
         const rect = el.getBoundingClientRect();
         return rect.top >= 0 && rect.bottom <= window.innerHeight;
