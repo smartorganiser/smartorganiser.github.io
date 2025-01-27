@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Benim Sunum Sayfam</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Benim Blog Sayfam | Smart Desk Organizer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <h1>Hoş Geldiniz!</h1>
+            <h1>Smart Blog</h1>
         </div>
         <nav>
             <ul>
+                <li><a href="#home">Anasayfa</a></li>
                 <li><a href="#about">Hakkımda</a></li>
                 <li><a href="#projects">Projeler</a></li>
                 <li><a href="#contact">İletişim</a></li>
@@ -22,53 +23,54 @@
         </nav>
     </header>
 
-    <section id="about">
-        <div class="container">
-            <h2>Ben Kimim?</h2>
-            <p>Merhaba! Benim adım [Adınız]. Web geliştirme, tasarım ve yazılım dünyasında yeni bir keşif yapıyorum. Bu sayfa, projelerimi, becerilerimi ve bana nasıl ulaşabileceğinizi görmek için hazırlandı.</p>
-        </div>
-    </section>
+    <main>
+        <div class="content-wrapper">
+            <section class="main-content">
+                <h2>Son Yazılar</h2>
+                
+                <div class="post">
+                    <div class="post-image">
+                        <img src="https://via.placeholder.com/700x400" alt="Smart Desk Organizer">
+                    </div>
+                    <h3><a href="#">Smart Desk Organizer: Verimli Çalışma Alanı Oluşturun</a></h3>
+                    <p class="post-meta">Yayınlanma Tarihi: 27 Ocak 2025 | Kategori: Teknoloji, Tasarım</p>
+                    <p class="post-summary">Bu yazıda, masa düzenini akıllıca yapmanın yollarını anlatacağım. Smart Desk Organizer, çalışma alanınızı daha düzenli ve verimli hale getirmek için tasarlanmış bir projedir. Teknolojiyi kullanarak yaşam alanınızda nasıl devrim yapabilirsiniz...</p>
+                    <a href="#" class="read-more">Devamını Oku →</a>
+                </div>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Projelerim</h2>
-            <div class="project">
-                <h3>Proje 1</h3>
-                <p>Bu proje hakkında kısa açıklama.</p>
-            </div>
-            <div class="project">
-                <h3>Proje 2</h3>
-                <p>Bu proje hakkında kısa açıklama.</p>
-            </div>
-            <div class="project">
-                <h3>Proje 3</h3>
-                <p>Bu proje hakkında kısa açıklama.</p>
-            </div>
-        </div>
-    </section>
+                <div class="post">
+                    <h3><a href="#">Teknoloji ve Tasarımın Geleceği</a></h3>
+                    <p class="post-meta">Yayınlanma Tarihi: 20 Ocak 2025 | Kategori: Teknoloji, Gelecek</p>
+                    <p class="post-summary">Teknolojinin hızla gelişmesiyle, tasarım dünyasında da devrimler yaşanıyor. Bu yazıda, yeni nesil teknolojiler ve tasarım süreçlerini nasıl entegre edebileceğimizi tartışacağım...</p>
+                    <a href="#" class="read-more">Devamını Oku →</a>
+                </div>
 
-    <section id="contact">
-        <div class="container">
-            <h2>İletişime Geç</h2>
-            <form>
-                <label for="name">Adınız</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">E-posta</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Mesajınız</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                
-                <button type="submit">Gönder</button>
-            </form>
+                <!-- Daha fazla yazı ekleyebilirsiniz -->
+            </section>
+
+            <aside class="sidebar">
+                <h3>Hakkımda</h3>
+                <p>Merhaba! Benim adım [Adınız]. Web geliştirme, tasarım ve yenilikçi projelerle ilgileniyorum. Bu blogda, projelerim, teknoloji ve tasarım dünyasına dair yazılar paylaşacağım.</p>
+
+                <h3>Projeler</h3>
+                <ul>
+                    <li><a href="#">Smart Desk Organizer</a></li>
+                    <li><a href="#">Kişisel Web Tasarım Projem</a></li>
+                    <li><a href="#">Mobil Uygulama Geliştirme</a></li>
+                </ul>
+
+                <h3>Sosyal Medya</h3>
+                <ul class="social-links">
+                    <li><a href="https://facebook.com">Facebook</a></li>
+                    <li><a href="https://twitter.com">Twitter</a></li>
+                    <li><a href="https://instagram.com">Instagram</a></li>
+                </ul>
+            </aside>
         </div>
-    </section>
+    </main>
 
     <footer>
         <p>&copy; 2025 Tüm hakları saklıdır. | <a href="https://github.com">Github</a></p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
