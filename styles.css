@@ -1,4 +1,4 @@
-/* Temel ayar ve sıfırlama */
+/* Temel sıfırlama */
 * {
     margin: 0;
     padding: 0;
@@ -7,40 +7,40 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f5f7fa;
+    background-color: #f0f0f0;
     color: #333;
     line-height: 1.6;
 }
 
 header {
-    background-color: #3b5998;
-    color: white;
+    background-color: #0066cc;
+    color: #fff;
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    font-size: 3em;
-    text-transform: uppercase;
+    font-size: 3.5em;
     letter-spacing: 1px;
+    font-weight: 700;
 }
 
 nav ul {
-    list-style-type: none;
-    margin-top: 15px;
+    list-style: none;
+    margin-top: 20px;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
-    text-decoration: none;
-    font-weight: 600;
     font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: none;
     transition: color 0.3s ease;
 }
 
@@ -49,122 +49,79 @@ nav ul li a:hover {
 }
 
 main {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 40px;
     padding: 20px;
 }
 
-.content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+.section {
+    padding: 60px 0;
+    border-bottom: 1px solid #ddd;
 }
 
-.main-content {
-    width: 70%;
+.section-content {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
 }
 
-.sidebar {
-    width: 25%;
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.post {
-    background-color: white;
+h2 {
+    font-size: 2.5em;
+    color: #0066cc;
     margin-bottom: 30px;
-    padding: 20px;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.post:hover {
-    transform: translateY(-5px);
-}
-
-.post h3 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-}
-
-.post a {
-    text-decoration: none;
-    color: #333;
-}
-
-.post a:hover {
-    color: #3b5998;
-}
-
-.post-meta {
-    font-size: 0.9em;
-    color: #777;
-    margin-bottom: 15px;
-}
-
-.post-summary {
-    font-size: 1.1em;
-    margin-bottom: 20px;
-}
-
-.read-more {
-    font-weight: bold;
-    color: #3b5998;
-    text-decoration: none;
-    font-size: 1.1em;
-}
-
-.read-more:hover {
-    color: #ffd700;
-}
-
-.sidebar h3 {
-    font-size: 1.5em;
-    margin-bottom: 15px;
-}
-
-.sidebar ul {
-    list-style-type: none;
-}
-
-.sidebar ul li {
-    margin-bottom: 10px;
-}
-
-.sidebar ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 1.1em;
-}
-
-.sidebar ul li a:hover {
-    color: #3b5998;
-}
-
-.social-links {
-    list-style-type: none;
     margin-top: 20px;
 }
 
-.social-links li {
-    margin-bottom: 10px;
+.features-container,
+.process-steps,
+.technologies-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
 }
 
-.social-links li a {
+.feature-item,
+.process-step,
+.technology-item {
+    width: 22%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.feature-item img,
+.process-step img,
+.technology-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+.contact-info li {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #0066cc;
     text-decoration: none;
-    color: #333;
-    font-size: 1.1em;
 }
 
 footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #3b5998;
+    background-color: #0066cc;
     color: white;
+    text-align: center;
+    padding: 20px;
     font-size: 1.1em;
 }
 
@@ -179,22 +136,29 @@ footer a:hover {
 
 /* Mobil uyumlu tasarım */
 @media (max-width: 768px) {
-    main {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .content-wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .main-content, .sidebar {
-        width: 90%;
-        margin-bottom: 20px;
-    }
-
     header h1 {
         font-size: 2.5em;
+    }
+
+    .section-content {
+        width: 90%;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .features-container,
+    .process-steps,
+    .technologies-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item,
+    .process-step,
+    .technology-item {
+        width: 80%;
     }
 }
