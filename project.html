@@ -1,60 +1,134 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Desk Organizer Blog</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smart Desk Organizer | Proje Sunumu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!-- Header Section with Logo -->
-    <header>
+    <!-- Başlangıç Navigasyonu -->
+    <header id="header">
         <div class="logo">
-            <img src="logo-placeholder.png" alt="Üniversite Logo" />
+            <h1>Smart Desk Organizer</h1>
         </div>
-        <nav>
+        <nav class="navbar">
             <ul>
-                <li><a href="#">Ana Sayfa</a></li>
-                <li><a href="#">Hakkında</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">İletişim</a></li>
+                <li><a href="#overview" class="nav-link">Proje Genel Bakış</a></li>
+                <li><a href="#features" class="nav-link">Özellikler</a></li>
+                <li><a href="#process" class="nav-link">Proje Süreci</a></li>
+                <li><a href="#technologies" class="nav-link">Kullanılan Teknolojiler</a></li>
+                <li><a href="#contact" class="nav-link">İletişim</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main Section -->
+    <!-- Ana Sayfa -->
     <main>
-        <section class="hero">
-            <h1>Smart Desk Organizer: Çalışma Alanınızı Düzenleyin!</h1>
-            <p>Bu heyecan verici proje, masa düzeninizi mükemmel bir şekilde organize etmenize yardımcı olacak! Hem estetik hem işlevsel çözümlerle tanışın.</p>
+        <!-- Proje Genel Bakış -->
+        <section id="overview" class="section overview">
+            <div class="content">
+                <h2 class="section-title">Proje Genel Bakış</h2>
+                <p class="section-description">Smart Desk Organizer, çalışma alanlarını düzenlemeyi daha verimli hale getiren modern ve teknolojik bir çözümdür. Ergonomik tasarımı ve akıllı özellikleri ile kullanıcı deneyimini dönüştürür.</p>
+                <div class="image-wrapper">
+                    <img src="https://via.placeholder.com/1200x800" alt="Smart Desk Organizer">
+                </div>
+            </div>
         </section>
 
-        <section class="content">
-            <article class="blog-post fade-in">
-                <h2>Smart Desk Organizer Nedir?</h2>
-                <p>Smart Desk Organizer, çalışma alanınızı daha verimli ve düzenli tutmanıza yardımcı olan, teknolojiyle entegre edilmiş bir masa düzenleyicisidir. Şu anda çok popüler, çünkü kullanıcı dostu ve akıllı özelliklere sahip.</p>
-            </article>
-
-            <article class="blog-post fade-in delay-1">
-                <h2>Proje Heyecanı</h2>
-                <p>Bu projede, hem kişisel hem profesyonel çalışma alanlarını geliştirmek adına birçok yenilikçi çözüm sunuluyor. Her ayrıntı, masa düzeninin ve çalışma ortamının en verimli şekilde kullanılabilmesi için tasarlanmıştır!</p>
-            </article>
+        <!-- Özellikler -->
+        <section id="features" class="section features">
+            <div class="content">
+                <h2 class="section-title">Özellikler</h2>
+                <div class="feature-cards">
+                    <div class="feature-card">
+                        <h3 class="feature-title">Modüler Tasarım</h3>
+                        <p class="feature-description">İhtiyaçlarınıza göre özelleştirilebilir bölmelerle çalışmanızı daha verimli hale getirir.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3 class="feature-title">Dijital Entegrasyon</h3>
+                        <p class="feature-description">Sensörler ve dijital teknolojiler ile anında masa düzeni optimizasyonu sağlanır.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3 class="feature-title">Ergonomik Yapı</h3>
+                        <p class="feature-description">Uzun süreli kullanımlarda bile rahatlık sunan ergonomik tasarım sayesinde sağlığınız ön planda tutulur.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="subscribe slide-up">
-            <h2>Blog'a Abone Olun!</h2>
-            <form id="subscribe-form">
-                <input type="email" id="email" placeholder="E-posta adresinizi girin..." required>
-                <button type="submit">Abone Ol</button>
-            </form>
+        <!-- Proje Süreci -->
+        <section id="process" class="section process">
+            <div class="content">
+                <h2 class="section-title">Proje Süreci</h2>
+                <div class="process-steps">
+                    <div class="step">
+                        <h3 class="step-title">Fikir ve Tasarım</h3>
+                        <p class="step-description">Kullanıcı ihtiyaçları ve ergonomi göz önünde bulundurularak tasarım aşamasına geçildi.</p>
+                    </div>
+                    <div class="step">
+                        <h3 class="step-title">Prototip Oluşturma</h3>
+                        <p class="step-description">3D yazıcı ile prototip üretildi ve kullanıcı geri bildirimlerine göre düzenlemeler yapıldı.</p>
+                    </div>
+                    <div class="step">
+                        <h3 class="step-title">Test ve İyileştirme</h3>
+                        <p class="step-description">Gerçek dünya koşullarında test edilen prototipler ile iyileştirmeler yapıldı.</p>
+                    </div>
+                    <div class="step">
+                        <h3 class="step-title">Üretim ve Lansman</h3>
+                        <p class="step-description">Sonunda ürün piyasaya sürüldü ve kullanıcılar tarafından büyük beğeniyle karşılandı.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kullanılan Teknolojiler -->
+        <section id="technologies" class="section technologies">
+            <div class="content">
+                <h2 class="section-title">Kullanılan Teknolojiler</h2>
+                <div class="tech-list">
+                    <div class="tech-item">
+                        <img src="https://via.placeholder.com/150x150" alt="Arduino">
+                        <h3 class="tech-name">Arduino</h3>
+                        <p class="tech-description">Sensörleri kontrol etmek için Arduino teknolojisi kullanıldı.</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://via.placeholder.com/150x150" alt="LED Teknolojisi">
+                        <h3 class="tech-name">LED Teknolojisi</h3>
+                        <p class="tech-description">Işık seviyelerini optimize etmek için LED teknolojisi kullanıldı.</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://via.placeholder.com/150x150" alt="3D Yazıcı">
+                        <h3 class="tech-name">3D Yazıcı</h3>
+                        <p class="tech-description">Ürün prototiplerini üretmek için 3D yazıcı teknolojisi kullanıldı.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- İletişim -->
+        <section id="contact" class="section contact">
+            <div class="content">
+                <h2 class="section-title">İletişim</h2>
+                <ul class="contact-info">
+                    <li>Email: <a href="mailto:example@example.com">example@example.com</a></li>
+                    <li>Telefon: +90 123 456 7890</li>
+                    <li><a href="https://github.com" target="_blank">Github Profilim</a></li>
+                </ul>
+            </div>
         </section>
     </main>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Smart Desk Organizer Blog | Tüm hakları saklıdır.</p>
+        <p>&copy; 2025 Smart Desk Organizer | Tüm hakları saklıdır.</p>
     </footer>
 
     <script src="scripts.js"></script>
 </body>
+
 </html>
