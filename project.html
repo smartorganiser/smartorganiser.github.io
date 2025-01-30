@@ -164,13 +164,17 @@
 
         <div class="education-row">
             <div class="education-column">
-                
-
+                <p>ჭკვიანი მაგიდის ორგანიზატორი აერთიანებს RFID ტექნოლოგიას, წონის სენსორებს, უსადენო დამუხტვის სისტემას და მიკროკონტროლერს (ESP32), რათა მართოს სამუშაო სივრცე.<span class="animate scroll" style="--i:2;"></span></p>
+               
+               <h3 class="title"> RFID სისტემა: <span class="animate scroll" style="--i:2;"></span></h3>
                 <div class="education-box">
+                    
+                    
                     <div class="education-content">
+                         
                         <div class="content">
                             
-                            <h3> RFID ტექნოლოგია: საოფისე ნივთების ორგანიზებისთვის.</h3>
+                            <h3> RFID ტეგები: თითოეულ ნივთს აქვს RFID ტეგი, რომელიც შეიცავს უნიკალურ ID-ს.</h3>
                             
                         </div>
                     </div>
@@ -178,15 +182,8 @@
                     <div class="education-content">
                         <div class="content">
                             
-                            <h3> თაჩსქრინი: To Do List, ახალი ამბების ჩვენება, RGB განათების და  ხმის ჩამხშობისპიკერების კონტროლი კონტროლი.</h3>
+                            <h3> RFID წამკითხველი: როდესაც ნივთი განთავსდება წამკითხველთან, მოწყობილობა სკანირებს RFID ტეგის ID-ს და მონაცემებს გადაგზავნის ESP32-ს.</h3>
 
-                        </div>
-                    </div>
-
-                    <div class="education-content">
-                        <div class="content">
-                            
-                            <h3> უკაბელო დამტენი: მოწყობილობების სწრაფი და მარტივი დატენვა კაბელის გარეშე. </h3>
                         </div>
                     </div>
 
@@ -196,13 +193,13 @@
 
 
             <div class="education-column">
-                
+                <h3 class="title"> ESP32 მიკროკონტროლერი: <span class="animate scroll" style="--i:2;"></span></h3>
 
                 <div class="education-box">
                     <div class="education-content">
                         <div class="content">
                             
-                            <h3> RGB განათება: განწყობაზე მორგებული ფერადი განათების არჩევის შესაძლებლობა.</h3>
+                            <h3> ESP32 იღებს RFID წამკითხველიდან მიღებულ მონაცემებს, ამუშავებს მათ და გაგზავნის ინფორმაციას TFT ეკრანზე. </h3>
                             
                         </div>
                     </div>
@@ -210,27 +207,75 @@
                     <div class="education-content">
                         <div class="content">
                             
-                            <h3> თერმო ჭიქის გამაცხელებელი: ჩაისა და ყავის სასურველ ტემპერატურაზე შენარჩუნებისთვის. </h3>
+                            <h3> ESP32 ასევე აკონტროლებს Qi უსადენო დამუხტვის მოდულს, რათა სმარტფონების ან სხვა მოწყობილობების დამუხტვა ავტომატურად მოხდეს.</h3>
                         </div>
                     </div>
 
+
+                    <span class="animate scroll" style="--i:6;"></span>
+                </div>
+            </div>
+
+             <div class="education-column">
+                <h3 class="title"> TFT ეკრანი: <span class="animate scroll" style="--i:2;"></span></h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            
+                            <h3> ეკრანზე გადმოსული მონაცემების საფუძველზე, მომხმარებელი ნახავს ნივთის სახელს და მის მდგომარეობას (მაგ. ადგილზეა თუ არა). </h3>
+                            
+                        </div>
+                    </div>
 
                     <div class="education-content">
                         <div class="content">
                             
-                            <h3> ხმაურის დამხშობი დინამიკები: თეთრი ხმაურის გენერაცია კონცენტრაციის გასაზრდელად. </h3>
+                            <h3> ეკრანი ასევე საშუალებას იძლევა, რომ მომხმარებელი მოძებნოს ან მონიშნოს კონკრეტული ნივთი </h3>
                         </div>
                     </div>
 
-                      <div class="education-content">
+
+                    <span class="animate scroll" style="--i:6;"></span>
+                </div>
+            </div>
+
+            <div class="education-column">
+                <h3 class="title"> წონის სენსორები: <span class="animate scroll" style="--i:2;"></span></h3>
+
+                <div class="education-box">
+                    <div class="education-content">
                         <div class="content">
                             
-                            <h3> ჰაერის ფილტრები: ჰაერის გაწმენდა და სასიამოვნო სამუშაო გარემოს შექმნა. </h3>
+                            <h3> წონის სენსორები ზომავენ ნივთის წონას და ამით დგინდება, რომ ნივთი სწორ ადგილას არის განთავსებული. თუ წონის მონაცემი არ ემთხვევა RFID-ს მონაცემებს, სისტემა ვერდადასტურებს, რომ შეიძლება ადგილი არასწორად იყოს შერჩეული. </h3>
+                            
                         </div>
                     </div>
 
 
-                    
+                    <span class="animate scroll" style="--i:6;"></span>
+                </div>
+            </div>
+
+             <div class="education-column">
+                <h3 class="title"> Qi უსადენო დამუხტვა: <span class="animate scroll" style="--i:2;"></span></h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            
+                            <h3> როდესაც სმარტფონი ან სხვა მოწყობილობა მოთავსდება Qi მოდულის სპეციალურ ადგილის ახლოს, მოდული დაიწყებს მოწყობილობის დამუხტვას. </h3>
+                            
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            
+                            <h3> ESP32 აკონტროლებს Qi მოდულის ჩართვას და გამორთვას, ხოლო ეკრანი აჩვენებს დამუხტვის სტატუსს (მაგ. "დამუხტვა მიმდინარეობს"). </h3>
+                        </div>
+                    </div>
+
 
                     <span class="animate scroll" style="--i:6;"></span>
                 </div>
