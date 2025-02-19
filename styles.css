@@ -323,13 +323,13 @@ section {
 }
 
 
-.target-content .text-animate {
+.target-content .texts-animate {
     position: relative;
     width: 18.4rem;
 }
 
 
-.target-content .text-animate h3 {
+.target-content .texts-animate h3 {
     font-size: 3.2rem;
     font-weight: 700;
     color: transparent;
@@ -340,13 +340,13 @@ section {
     background-position: -33rem 0;
 }
 
-.target.show-animate .target-content .text-animate h3 {
+.target.shows-animate .target-content .texts-animate h3 {
     animation: homeBgText 6s linear infinite;
     animation-delay: 2s;
 }
 
 
-.target-content .text-animate h3::before {
+.target-content .texts-animate h3::before {
     content: '';
     position: absolute;
     top: 0;
@@ -358,7 +358,7 @@ section {
 }
 
 
-.target.show-animate .target-content .text-animate h3::before {
+.target.shows-animate .target-content .texts-animate h3::before {
     animation: homeCursorText 6s linear infinite;
     animation-delay: 2s;
 }
