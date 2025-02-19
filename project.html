@@ -30,9 +30,9 @@
             <a href="#home" class="active"> შესავალი </a>
             <a href="#target" > მიზანი </a>
             <a href="#about"> კომპონენტები</a>
-            <a href="#schedule"> ბლოკსქემა და დიაგრამა </a>
+            <a href="#blok"> ბლოკსქემა და დიაგრამა </a>
             <a href="#think"> Thinkspeak & IFTTT </a>
-            <a href="#budget"> ბიუჯეტი</a>
+            <a href="#schedule"> ბიუჯეტი</a>
             <a href="#contact">კონტაქტი</a>
             
 
@@ -121,93 +121,187 @@
 
    <!-- about section design-->
 <section class="about" id="about">
-    <h2 class="heading"> კომპონენტები და <span> სენსორები </span><span class="animate scroll" style="--i:1;"></span></h2>
+    <h2 class="heading"> <span> კომპონენტები </span><span class="animate scroll" style="--i:1;"></span></h2>
 
     <div class="row">
         <div class="about-item">
             <div class="about-img">
-                <img src="./esp.png" alt="">
+                <img src="./ger1.jpg" alt="">
                 <span class="circle-spin"></span>
                 <span class="animate scroll" style="--i:2;"></span>
             </div>
             <div class="about-content">
-                <h3> ESP32 მიკროკონტროლერი <span class="animate scroll" style="--i:3;"></span></h3>
-                <p> არის მიკროკონტროლერი, რომელიც გამოიყენება პროექტის ძირითადი მართვისთვის და ასრულებს მონაცემების დამუშავებას RFID წამკითხველიდან და სხვა სენსორებიდან. მართავს ეკრანზე გამოსახულ ინფორმაციას. უზრუნველყოფს უკაბელო კავშირს (Wi-Fi ან Bluetooth), საჭიროების შემთხვევაში. <span class="animate scroll" style="--i:4;"></span></p>
+                <h3> NodeMCU ESP8266 მიკროკონტროლერი <span class="animate scroll" style="--i:3;"></span></h3>
+                <p> NodeMCU არის open-source მქონე განვითარების პლატფორმა, რომელიც მუშაობს ESP8266 Wi-Fi SoC-ზე, რომელიც შემუშავებულია Espressif Systems-ის მიერ. მას აქვს ჩაშენებული Wi-Fi მოდული, რაც მას იდეალურს ხდის IoT-თან დაკავშირებული პროექტებისთვის.  <span class="animate scroll" style="--i:4;"></span></p>
             </div>
         </div>
         <div class="about-item">
             <div class="about-img">
-                <img src="./h7.jpg" alt="">
+                <img src="./ger2.jpg" alt="">
                 <span class="circle-spin"></span>
                 <span class="animate scroll" style="--i:2;"></span>
             </div>
             <div class="about-content">
-                <h3> RFID წამკითხველი (სენსორი) <span class="animate scroll" style="--i:3;"></span></h3>
-                <p> ეს მოდული (მაგ., RC522) წაიკითხავს RFID ტეგებზე მოთავსებულ უნიკალურ მონაცემებს. უზრუნველყოფს RFID ტეგების სკანირებას და აგზავნის სკანირებულ მონაცემებს ESP32-ზე.<span class="animate scroll" style="--i:4;"></span></p>
+                <h3> წონის სენსორი (Load Cell) <span class="animate scroll" style="--i:3;"></span></h3>
+                <p> არის მოწყობილობა, რომელიც გარდაქმნის მექანიკურ ძალას (წონას) ელექტრულ სიგნალად, რაც საშუალებას აძლევს ზუსტად გაზომოთ წონა. იგი ფართოდ გამოიყენება სხვადასხვა ინდუსტრიაში, როგორიცაა სასაწყობო და ვაჭრობის სისტემები.<span class="animate scroll" style="--i:4;"></span></p>
             </div>
         </div>
         <div class="about-item">
             <div class="about-img">
-                <img src="./esp5.jpeg" alt="esp">
+                <img src="./ger3.jpg" alt="esp">
                 <span class="circle-spin"></span>
                 <span class="animate scroll" style="--i:2;"></span>
             </div>
             <div class="about-content">
-                <h3> RFID ტეგები <span class="animate scroll" style="--i:3;"></span></h3>
-                <p> ტეგები შეიცავენ უნიკალურ იდენტიფიკატორს (ID), რომელიც ამოცნობილია RFID წამკითხველის მიერ. ნივთებზე მიმაგრებული RFID ტეგები იძლევა საშუალებას მათ სწრაფად და მარტივად აღმოაჩინოთ. <span class="animate scroll" style="--i:4;"></span></p>
+                <h3> HX711 ამპლიფიკატორის მოდული <span class="animate scroll" style="--i:3;"></span></h3>
+                <p> არის მაღალი სიზუსტის ამპლიფიკატორის მოდული, რომელიც გამოიყენება წონის სენსორებთან (Load Cell) და სხვა მსგავს მოწყობილობებთან სამუშაოდ. იგი უზრუნველყოფს სიგნალის გაძლიერებას და გარდაქმნას, რომ ჩართული იყოს მიკროკონტროლერთან (მაგალითად, NodeMCU ან Arduino). HX711 გამოიყენება წონის, ძალის ან სხვა მექანიკური წნევის გაზომვისთვის და ყველაზე ხშირად გამოიყენება პრეტენზიული სასწორების სისტემებში. <span class="animate scroll" style="--i:4;"></span></p>
             </div>
         </div>
 
 
         <div class="about-item">
             <div class="about-img">
-                <img src="./esp3.jpg" alt="">
+                <img src="./ger4.jpg" alt="">
                 <span class="circle-spin"></span>
                 <span class="animate scroll" style="--i:2;"></span>
             </div>
             <div class="about-content">
-                <h3> TFT სენსორული ეკრანი <span class="animate scroll" style="--i:3;"></span></h3>
-                <p> ეს არის ეკრანი, რომელიც იყენებს ტაქტილურ სენსორებს მომხმარებელთან ინტერაქციისთვის. აჩვენებს სკანირებული ნივთების სიას. მომხმარებელს საშუალებას აძლევს მონიშნოს ან მოძებნოს კონკრეტული ნივთი ეკრანზე. <span class="animate scroll" style="--i:4;"></span></p>
+                <h3> 128x64 OLED ეკრანი <span class="animate scroll" style="--i:3;"></span></h3>
+                <p> ეს ორგანული სინათლის გამოსხივების დიოდიანი (OLED) ეკრანი არის მონოქრომული, 0.96-ინჩიანი ეკრანი, რომელსაც აქვს 128×64 პიქსელი. OLED ეკრანს არ სჭირდება დამატებითი განათება (backlight), რადგან თავად პიქსელები LED-ებია. <span class="animate scroll" style="--i:4;"></span></p>
             </div>
         </div>
 
-        <div class="about-item">
-            <div class="about-img">
-                <img src="./esp4.jpeg" alt="">
-                <span class="circle-spin"></span>
-                <span class="animate scroll" style="--i:2;"></span>
-            </div>
-            <div class="about-content">
-                <h3> Qi უსადენო დამუხტვის მოდული <span class="animate scroll" style="--i:3;"></span></h3>
-                <p> მოდული მოწყობილობის მიერ სმარტფონების ან სხვა მოწყობილობების უსადენოდ დამუხტვისთვის. ორგანიზატორის დამატებითი ფუნქციაა სამუშაო სივრცის ოპტიმიზაცია.<span class="animate scroll" style="--i:4;"></span></p>
-            </div>
-        </div>
-
-        <div class="about-item">
-            <div class="about-img">
-                <img src="./esp2.jpg" alt="">
-                <span class="circle-spin"></span>
-                <span class="animate scroll" style="--i:2;"></span>
-            </div>
-            <div class="about-content">
-                <h3> წონის სენსორები (Weight Sensors) <span class="animate scroll" style="--i:3;"></span></h3>
-                <p> ეს სენსორები ზომავს ნივთების წონას, რაც დაეხმარება მოწყობილობას უფრო ზუსტ მუშაობაში. ნივთის წონის მიხედვით განსაზღვრავს თუ რაზეა საუბარი, RFID-სთან კომბინაციაში. <span class="animate scroll" style="--i:4;"></span></p>
-            </div>
-        </div>
     </div>
 </section>
+
+       <!-- home section design-->
+    <section class="home show-animate" id="home">
+        <div class="home-content">
+            <div class="text-animate">
+                <h3> შესავალი </h3>
+                <span class="animate" style="--i:3;"></span>
+            </div>
+            <p> ინვენტარის მართვაში მრავალი სირთულე შეიძლება წარმოიშვას. ზოგადი პრობლემები მოიცავს არაზუსტ მონაცემებს,ზედმეტ ან არასაკმარის მარაგს, დოკუმენტაციის შეცდომებს და არასაკმარის კომუნიკაციას.  ამ პრობლემების გადასაჭრელად გადავწყვიტეთ შეგვექმნა ეს პროექტი. ჭკვიანი ორგანაიზერი ინვენტარის ავტომატიზირებულ აღრიცხვას და თანამედროვე ტექნოლოგიების დანერგვას აპირებს.
+<br><br> ჩვენ შევიმუშავეთ IoT-ზე დაფუძნებული ინვენტარის მართვის სისტემა. აღნიშნული სისტემა გამოიყენებს წონის სენსორებსა და NodeMCU-ს და ის ავტომატურად განსაზღვრავს მარაგის ხელმისაწვდომობას და მონაცემებს ThingSpeak-ის Cloud პლატფორმაზე ატვირთავს. ასევე, ჭკვიანი ორგანაიზერი  შექმნის მონაცემთა ისტორიას და მარაგის სტატუსს, ხოლო როდესაც პროდუქტის რაოდენობა განსაზღვრულ ზღვარს მიაღწევს, მომხმარებელი ელექტრონული ფოსტით მიიღებს შეტყობინებას.
+
+            </p>
+          <br>
+        </div>
+       
+
+        <div class="home-imgHover"></div>
+        <span class="animate home-img" style="--i:7;"></span>
+
+        <div class="platform-img">
+            <img id="platform-image" src="./robot.png" alt="Platform Image" style="display: none">
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const platformButton = document.getElementById('btn-პლატფორმა');
+                const platformImage = document.getElementById('platform-image');
+    
+                platformButton.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent default anchor behavior
+                    if (platformImage.style.display === 'none' || platformImage.style.display === '') {
+                        platformImage.style.display = 'block'; // Show the image
+                    } else {
+                        platformImage.style.display = 'none'; // Hide the image
+                    }
+                });
+            });
+        </script>
+    </section>
+
+       <!-- home section design-->
+    <section class="home show-animate" id="home">
+        <div class="home-content">
+            <div class="text-animate">
+                <h3> შესავალი </h3>
+                <span class="animate" style="--i:3;"></span>
+            </div>
+            <p> ინვენტარის მართვაში მრავალი სირთულე შეიძლება წარმოიშვას. ზოგადი პრობლემები მოიცავს არაზუსტ მონაცემებს,ზედმეტ ან არასაკმარის მარაგს, დოკუმენტაციის შეცდომებს და არასაკმარის კომუნიკაციას.  ამ პრობლემების გადასაჭრელად გადავწყვიტეთ შეგვექმნა ეს პროექტი. ჭკვიანი ორგანაიზერი ინვენტარის ავტომატიზირებულ აღრიცხვას და თანამედროვე ტექნოლოგიების დანერგვას აპირებს.
+<br><br> ჩვენ შევიმუშავეთ IoT-ზე დაფუძნებული ინვენტარის მართვის სისტემა. აღნიშნული სისტემა გამოიყენებს წონის სენსორებსა და NodeMCU-ს და ის ავტომატურად განსაზღვრავს მარაგის ხელმისაწვდომობას და მონაცემებს ThingSpeak-ის Cloud პლატფორმაზე ატვირთავს. ასევე, ჭკვიანი ორგანაიზერი  შექმნის მონაცემთა ისტორიას და მარაგის სტატუსს, ხოლო როდესაც პროდუქტის რაოდენობა განსაზღვრულ ზღვარს მიაღწევს, მომხმარებელი ელექტრონული ფოსტით მიიღებს შეტყობინებას.
+
+            </p>
+          <br>
+        </div>
+       
+
+        <div class="home-imgHover"></div>
+        <span class="animate home-img" style="--i:7;"></span>
+
+        <div class="platform-img">
+            <img id="platform-image" src="./robot.png" alt="Platform Image" style="display: none">
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const platformButton = document.getElementById('btn-პლატფორმა');
+                const platformImage = document.getElementById('platform-image');
+    
+                platformButton.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent default anchor behavior
+                    if (platformImage.style.display === 'none' || platformImage.style.display === '') {
+                        platformImage.style.display = 'block'; // Show the image
+                    } else {
+                        platformImage.style.display = 'none'; // Hide the image
+                    }
+                });
+            });
+        </script>
+    </section>
+
+    
+       <!-- home section design-->
+    <section class="home show-animate" id="home">
+        <div class="home-content">
+            <div class="text-animate">
+                <h3> შესავალი </h3>
+                <span class="animate" style="--i:3;"></span>
+            </div>
+            <p> ინვენტარის მართვაში მრავალი სირთულე შეიძლება წარმოიშვას. ზოგადი პრობლემები მოიცავს არაზუსტ მონაცემებს,ზედმეტ ან არასაკმარის მარაგს, დოკუმენტაციის შეცდომებს და არასაკმარის კომუნიკაციას.  ამ პრობლემების გადასაჭრელად გადავწყვიტეთ შეგვექმნა ეს პროექტი. ჭკვიანი ორგანაიზერი ინვენტარის ავტომატიზირებულ აღრიცხვას და თანამედროვე ტექნოლოგიების დანერგვას აპირებს.
+<br><br> ჩვენ შევიმუშავეთ IoT-ზე დაფუძნებული ინვენტარის მართვის სისტემა. აღნიშნული სისტემა გამოიყენებს წონის სენსორებსა და NodeMCU-ს და ის ავტომატურად განსაზღვრავს მარაგის ხელმისაწვდომობას და მონაცემებს ThingSpeak-ის Cloud პლატფორმაზე ატვირთავს. ასევე, ჭკვიანი ორგანაიზერი  შექმნის მონაცემთა ისტორიას და მარაგის სტატუსს, ხოლო როდესაც პროდუქტის რაოდენობა განსაზღვრულ ზღვარს მიაღწევს, მომხმარებელი ელექტრონული ფოსტით მიიღებს შეტყობინებას.
+
+            </p>
+          <br>
+        </div>
+       
+
+        <div class="home-imgHover"></div>
+        <span class="animate home-img" style="--i:7;"></span>
+
+        <div class="platform-img">
+            <img id="platform-image" src="./robot.png" alt="Platform Image" style="display: none">
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const platformButton = document.getElementById('btn-პლატფორმა');
+                const platformImage = document.getElementById('platform-image');
+    
+                platformButton.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent default anchor behavior
+                    if (platformImage.style.display === 'none' || platformImage.style.display === '') {
+                        platformImage.style.display = 'block'; // Show the image
+                    } else {
+                        platformImage.style.display = 'none'; // Hide the image
+                    }
+                });
+            });
+        </script>
+    </section>
+
+
 
 
     <!-- education section design -->
     <section class="education" id="schedule">
-        <h2 class="heading"> მუშაობის პრინციპი და <span>ფუნქციები</span><span class="animate scroll" style="--i:1;"></span></h2>
+        <h2 class="heading"> <span>ბიუჯეტი</span><span class="animate scroll" style="--i:1;"></span></h2>
         <br> <h4 class="heading">  <span class="animate scroll" style="--i:2;"></span></h4>
 
         <div class="education-row">
 
               <div class="education-column">
                
-               <h3 class="title"> მუშაობის პრინციპი  <span class="animate scroll" style="--i:2;"></span></h3>
+               <h3 class="title"> ჯამი: $206.19 <span class="animate scroll" style="--i:2;"></span></h3>
                 <div class="education-box">
                     
                     
@@ -215,7 +309,7 @@
                          
                         <div class="content">
                             
-                            <h3> ჭკვიანი მაგიდის ორგანიზატორი აერთიანებს RFID ტექნოლოგიას, წონის სენსორებს, უსადენო დამუხტვის სისტემას და მიკროკონტროლერს (ESP32), რათა მართოს სამუშაო სივრცე. </h3>
+                            <h3> <a href= "https://www2.mouser.com/ProductDetail/356-ESP8266-DEVKITS"> NodeMCU ESP8266 - $38.51 </a> </h3>
                             
                         </div>
                     </div>
@@ -223,7 +317,23 @@
                     <div class="education-content">
                         <div class="content">
                             
-                            <h3> ამ პრინციპის მიხედვით, ყველა კომპონენტი მუშაობს სინქრონულად, რათა შექმნას სისტემა, რომელიც საშუალებას იძლევა სწრაფად იპოვოთ და მართოთ ნივთები, ასევე გამოიყენოთ უსადენო დამუხტვის ფუნქცია </h3>
+                            <h3> <a href = "https://www.amazon.com/Wishiot-Amplifier-Weighing-Dual-Channel-Precision/dp/B0CRDBJ8L7/ref=sr_1_4?crid=3QZXVSK7ZZGY7&dib=eyJ2IjoiMSJ9.wFjuZtu01NXWs70SuhDnhecANdFEEiV6BdejifJqBvbkdo6UeuT4zysV8RJpDAMj90DSikRZ4tNDIwKUUEeQ16E_lI7y0WNJovS2QEOdlZuEQsTUarYE6h2QyW-0oHLSHcNkKZ-je63Q1Pw0X660kvFNEAqQ9_54x80GX4Pyt3-a-cCmZHWRale_keWqVO-9Wr5tntErVib5JQFabJaa5XsPYcFXHvOiWyDoiXrOgm4.NWtd2ITggzRqtY5rKgMDITacPV1n2ab9MafD4gD9OPI&dib_tag=se&keywords=HX711%2BLoad%2BCell%2BAmplifier%2BModule&qid=1739891475&sprefix=hx711%2Bload%2Bcell%2Bamplifier%2Bmodule%2Caps%2C229&sr=8-4&th=1"> Load Cell და HX711 Load Cell Amplifier Module - $25.27 </a> </h3>
+
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            
+                            <h3> <a href = "https://www.amazon.com/Hosyond-Display-Self-Luminous-Compatible-Raspberry/dp/B09T6SJBV5/ref=sr_1_3?dib=eyJ2IjoiMSJ9.l-FK2pxw8wWhZ_wtkFb4O1fyrXLIhGQ52dk_-yA7h6EzOTIfMqKE89kTSJj_8ytcCLL2neeb_cYmSRGS50ggRP_Y9RKjZXR1hWMqgzV6wCQw7RbQv3bayyuuxe4-r3gvxXjWXyxfH6ofTND49SWf0Z33bSBsQOX9venpw7KwapDXXcdFnTeh7E1nWs6QoF7SV0EQBlFVKDgUPh-rOtviOIIQjg56T23jrpRfIRMdVFs.1w5Aya0KPwLiRUEZKNBlZ8Zzkgt69KR4bzTItfmwwis&dib_tag=se&keywords=oled%2B128x64&qid=1739891668&sr=8-3&th=1"> 128*64 OLED Display - $28.25 </a> </h3>
+
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            
+                            <h3> <a href = "https://www.amazon.com/Breadboard-Compatible-Arduino-Projects-Raspberry/dp/B0BTT31CBC/ref=sr_1_2_sspa?dib=eyJ2IjoiMSJ9.qjVrFgN8UlDUIBGK4sOX_cDhvmSXM9ktO00LJP7xrnn5PwsFlHdf09DKzdUdXcj5ln--ddSqGur4_au55Ie2az0ZtAHmmdbv9fp6W2yfLaisLN5hwdFcIjyngMXHkBEWB5DeUAf1KSdubpUvtdV1CKbvvvJ7BigiFZP70bxPkNzJeWrJEIunhxhJUby_mlH1mTElOXVJapXaLmymhQAoD_D-yGV2w5au7Jbn8LUZPew.mIeaenbILGprONRPomCv_kWnR6saGnBXKlfG2keGqms&dib_tag=se&keywords=connecting%2Bwires&qid=1739892550&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"> Jumper Wires - $23.23 </a></h3>
 
                         </div>
                     </div>
@@ -234,7 +344,7 @@
                                                                       
             <div class="education-column">
                
-               <h3 class="title"> RFID სისტემა: <span class="animate scroll" style="--i:2;"></span></h3>
+               <h3 class="title"> <span class="animate scroll" style="--i:2;"></span></h3>
                 <div class="education-box">
                     
                     
@@ -242,7 +352,7 @@
                          
                         <div class="content">
                             
-                            <h3> RFID ტეგები: თითოეულ ნივთს აქვს RFID ტეგი, რომელიც შეიცავს უნიკალურ ID-ს.</h3>
+                            <h3> <a href = "https://www.amazon.com/Breadboards-Solderless-Breadboard-Distribution-Connecting/dp/B07DL13RZH/ref=sr_1_3?crid=30828FY1XY4C7&dib=eyJ2IjoiMSJ9.Hrn8fbLIETdOPDXwX03uH3xvhxS25342djGUxvvy3LPILkFtgJGwI4AY5CjWTkvHAd2mwoL0aPj9g58r7dtl_dCijPgnqEbPqn0gbPAbd8KBUSf8eyfH0Zuu_zkrWDSVuM33Tq5wLJ7NCU1P126roXbfT6Jduksh7x3Z9LvDbhbnjH7lGwXB1DGAULxIho9gq8LhLPZO4t9alxc7dT_gURhPOKRT2KMLrkWP2FFlu1Y.an91HqtxEZmTSMxzsTsXRGyl2xd9nf4oQSkPXXbQDvc&dib_tag=se&keywords=Breadboard&qid=1739906208&sprefix=breadboard%2Caps%2C421&sr=8-3"> Breadboard - $23.23  </a></h3>
                             
                         </div>
                     </div>
@@ -250,7 +360,15 @@
                     <div class="education-content">
                         <div class="content">
                             
-                            <h3> RFID წამკითხველი: როდესაც ნივთი განთავსდება წამკითხველთან, მოწყობილობა სკანირებს RFID ტეგის ID-ს და მონაცემებს გადაგზავნის ESP32-ს.</h3>
+                            <h3> <a href = "https://www.amazon.com/Wood-Fiberboard-Unfinished-Chipboard-Engraving/dp/B0C9Y4ZH4P/ref=sr_1_7?crid=22OQUQQHJKPV6&dib=eyJ2IjoiMSJ9.90LB60vskJYwQWM1dAp2MODzjl64fgfAT3fURuwxLPTLO_JBp4pcNbdTSmmD-ANeg-6Q6gUj16EbvvRx9IblRJ9oL8lOkNEexRa_hiydrxREAqnLK_7CouLslWEk8X4VYzJbZcy4X9UnCWOLTa9FV57hSLTzSAlLfU2vj_uPa-ub6Kl-K8NELQbunrLyMGjm03yTUxG9QK_ByVORI-gCepp1rKKqkQUPHkx1Fvq0XlyYj-NNjUO2pSPRdWMrsAnY2FI1YvDCRoxY6fotJrjDMqEfAeiDQ2MRWtiZZT5djvzvgQvoE4k2DJ2_53h2-A0ev4eVCjk2xmKi4MlcPa5-QaxCMfK0HugWQqXK3YU6tpVgQH1-6cxRNiLwROnbpuKgqOabq4mqMffQJyQ7nm-1-o0r-y21txJmMfmevkA0_FmLtmBLngxqBzwD4e-1aCwP.xO2_DuR4OYJO3WMHluP87EARy9mWJDOjubkAe3WfAqQ&dib_tag=se&keywords=mdf&qid=1739907960&sprefix=mdf%2Caps%2C279&sr=8-7"> MDF Sheet - $48 </a> </h3>
+
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            
+                            <h3> <a href = "https://www.ebay.com/itm/145536480181?itmmeta=01JMDA6GCRKVM9G70848MM92XC&hash=item21e2a673b5:g:GOIAAOSwBklll9Ss&itmprp=enc%3AAQAKAAAAwMHg7L1Zz0LA5DYYmRTS30mzGke5mn8IgumveEVOcNLjfAvBHcQS%2FwMcJlvLJTFwMNmtwjLbE1gd8aXKhdqExHqaqjmSoz%2F1iU37nlEo4hGaBE8ibnAJ9NrUIftadW%2B3bfQqNpjkfVQj0WKGOIN6%2BBOecycYoWpwydcbZkbmg9W%2F2vLmzfUpCBTTmdubYMl8opCN%2FHKWEYp9OTxukal%2FK4MU4bBzAstywedqBLAK%2BiBZn%2FI%2F2JiyPFlIqA72EHaj1Q%3D%3D%7Ctkp%3ABk9SR8CGmqqjZQ"> 7.4-volt li-ion Battery - $19.70 </a> </h3>
 
                         </div>
                     </div>
@@ -258,176 +376,12 @@
                     <span class="animate scroll" style="--i:3;"></span>
                 </div>
             </div>
-
-
-            <div class="education-column">
-                <h3 class="title"> ESP32 მიკროკონტროლერი: <span class="animate scroll" style="--i:2;"></span></h3>
-
-                <div class="education-box">
-                    <div class="education-content">
-                        <div class="content">
-                            
-                            <h3> ESP32 იღებს RFID წამკითხველიდან მიღებულ მონაცემებს, ამუშავებს მათ და გაგზავნის ინფორმაციას TFT ეკრანზე. </h3>
-                            
-                        </div>
-                    </div>
-
-                    <div class="education-content">
-                        <div class="content">
-                            
-                            <h3> ESP32 ასევე აკონტროლებს Qi უსადენო დამუხტვის მოდულს, რათა სმარტფონების ან სხვა მოწყობილობების დამუხტვა ავტომატურად მოხდეს.</h3>
-                        </div>
-                    </div>
-
-
-                    <span class="animate scroll" style="--i:6;"></span>
-                </div>
-            </div>
-
-             <div class="education-column">
-                <h3 class="title"> TFT ეკრანი: <span class="animate scroll" style="--i:2;"></span></h3>
-
-                <div class="education-box">
-                    <div class="education-content">
-                        <div class="content">
-                            
-                            <h3> ეკრანზე გადმოსული მონაცემების საფუძველზე, მომხმარებელი ნახავს ნივთის სახელს და მის მდგომარეობას (მაგ. ადგილზეა თუ არა). </h3>
-                            
-                        </div>
-                    </div>
-
-                    <div class="education-content">
-                        <div class="content">
-                            
-                            <h3> ეკრანი ასევე საშუალებას იძლევა, რომ მომხმარებელი მოძებნოს ან მონიშნოს კონკრეტული ნივთი </h3>
-                        </div>
-                    </div>
-
-
-                    <span class="animate scroll" style="--i:6;"></span>
-                </div>
-            </div>
-
-            <div class="education-column">
-                <h3 class="title"> წონის სენსორები: <span class="animate scroll" style="--i:2;"></span></h3>
-
-                <div class="education-box">
-                    <div class="education-content">
-                        <div class="content">
-                            
-                            <h3> წონის სენსორები ზომავენ ნივთის წონას და ამით დგინდება, რომ ნივთი სწორ ადგილას არის განთავსებული. თუ წონის მონაცემი არ ემთხვევა RFID-ს მონაცემებს, სისტემა ვერდადასტურებს, რომ შეიძლება ადგილი არასწორად იყოს შერჩეული. </h3>
-                            
-                        </div>
-                    </div>
-
-
-                    <span class="animate scroll" style="--i:6;"></span>
-                </div>
-            </div>
-
-             <div class="education-column">
-                <h3 class="title"> Qi უსადენო დამუხტვა: <span class="animate scroll" style="--i:2;"></span></h3>
-
-                <div class="education-box">
-                    <div class="education-content">
-                        <div class="content">
-                            
-                            <h3> როდესაც სმარტფონი ან სხვა მოწყობილობა მოთავსდება Qi მოდულის სპეციალურ ადგილის ახლოს, მოდული დაიწყებს მოწყობილობის დამუხტვას. </h3>
-                            
-                        </div>
-                    </div>
-
-                    <div class="education-content">
-                        <div class="content">
-                            
-                            <h3> ESP32 აკონტროლებს Qi მოდულის ჩართვას და გამორთვას, ხოლო ეკრანი აჩვენებს დამუხტვის სტატუსს (მაგ. "დამუხტვა მიმდინარეობს"). </h3>
-                        </div>
-                    </div>
-
-
-                    <span class="animate scroll" style="--i:6;"></span>
-                </div>
-            </div>
+             
 
         </div>
     </section>
 
-       <!-- home section design-->
-    <section class="home show-animate" id="home">
-        <div class="home-content">
-            <div class="text-animate">
-                <h3> შესავალი </h3>
-                <span class="animate" style="--i:3;"></span>
-            </div>
-            <p> ინვენტარის მართვაში მრავალი სირთულე შეიძლება წარმოიშვას. ზოგადი პრობლემები მოიცავს არაზუსტ მონაცემებს,ზედმეტ ან არასაკმარის მარაგს, დოკუმენტაციის შეცდომებს და არასაკმარის კომუნიკაციას.  ამ პრობლემების გადასაჭრელად გადავწყვიტეთ შეგვექმნა ეს პროექტი. ჭკვიანი ორგანაიზერი ინვენტარის ავტომატიზირებულ აღრიცხვას და თანამედროვე ტექნოლოგიების დანერგვას აპირებს.
-<br><br> ჩვენ შევიმუშავეთ IoT-ზე დაფუძნებული ინვენტარის მართვის სისტემა. აღნიშნული სისტემა გამოიყენებს წონის სენსორებსა და NodeMCU-ს და ის ავტომატურად განსაზღვრავს მარაგის ხელმისაწვდომობას და მონაცემებს ThingSpeak-ის Cloud პლატფორმაზე ატვირთავს. ასევე, ჭკვიანი ორგანაიზერი  შექმნის მონაცემთა ისტორიას და მარაგის სტატუსს, ხოლო როდესაც პროდუქტის რაოდენობა განსაზღვრულ ზღვარს მიაღწევს, მომხმარებელი ელექტრონული ფოსტით მიიღებს შეტყობინებას.
-
-            </p>
-          <br>
-        </div>
-       
-
-        <div class="home-imgHover"></div>
-        <span class="animate home-img" style="--i:7;"></span>
-
-        <div class="platform-img">
-            <img id="platform-image" src="./robot.png" alt="Platform Image" style="display: none">
-        </div>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const platformButton = document.getElementById('btn-პლატფორმა');
-                const platformImage = document.getElementById('platform-image');
     
-                platformButton.addEventListener('click', function(event) {
-                    event.preventDefault(); // Prevent default anchor behavior
-                    if (platformImage.style.display === 'none' || platformImage.style.display === '') {
-                        platformImage.style.display = 'block'; // Show the image
-                    } else {
-                        platformImage.style.display = 'none'; // Hide the image
-                    }
-                });
-            });
-        </script>
-    </section>
-
-       <!-- home section design-->
-    <section class="home show-animate" id="home">
-        <div class="home-content">
-            <div class="text-animate">
-                <h3> შესავალი </h3>
-                <span class="animate" style="--i:3;"></span>
-            </div>
-            <p> ინვენტარის მართვაში მრავალი სირთულე შეიძლება წარმოიშვას. ზოგადი პრობლემები მოიცავს არაზუსტ მონაცემებს,ზედმეტ ან არასაკმარის მარაგს, დოკუმენტაციის შეცდომებს და არასაკმარის კომუნიკაციას.  ამ პრობლემების გადასაჭრელად გადავწყვიტეთ შეგვექმნა ეს პროექტი. ჭკვიანი ორგანაიზერი ინვენტარის ავტომატიზირებულ აღრიცხვას და თანამედროვე ტექნოლოგიების დანერგვას აპირებს.
-<br><br> ჩვენ შევიმუშავეთ IoT-ზე დაფუძნებული ინვენტარის მართვის სისტემა. აღნიშნული სისტემა გამოიყენებს წონის სენსორებსა და NodeMCU-ს და ის ავტომატურად განსაზღვრავს მარაგის ხელმისაწვდომობას და მონაცემებს ThingSpeak-ის Cloud პლატფორმაზე ატვირთავს. ასევე, ჭკვიანი ორგანაიზერი  შექმნის მონაცემთა ისტორიას და მარაგის სტატუსს, ხოლო როდესაც პროდუქტის რაოდენობა განსაზღვრულ ზღვარს მიაღწევს, მომხმარებელი ელექტრონული ფოსტით მიიღებს შეტყობინებას.
-
-            </p>
-          <br>
-        </div>
-       
-
-        <div class="home-imgHover"></div>
-        <span class="animate home-img" style="--i:7;"></span>
-
-        <div class="platform-img">
-            <img id="platform-image" src="./robot.png" alt="Platform Image" style="display: none">
-        </div>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const platformButton = document.getElementById('btn-პლატფორმა');
-                const platformImage = document.getElementById('platform-image');
-    
-                platformButton.addEventListener('click', function(event) {
-                    event.preventDefault(); // Prevent default anchor behavior
-                    if (platformImage.style.display === 'none' || platformImage.style.display === '') {
-                        platformImage.style.display = 'block'; // Show the image
-                    } else {
-                        platformImage.style.display = 'none'; // Hide the image
-                    }
-                });
-            });
-        </script>
-    </section>
-
    
 
     <!-- contact section design -->
