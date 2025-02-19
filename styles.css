@@ -377,6 +377,69 @@ section {
     margin: 2rem 0 4rem;
 }
 
+.target-sci {
+    position: absolute;
+    bottom: 4rem;
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.target-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+
+.target-sci a:hover {
+    color: var(--bg-color);
+}
+
+
+.target-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--main-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+
+.target-sci a:hover::before {
+    width: 100%;
+}
+
+
+.target-imgHover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
+}
+
+.target-imgHover:hover {
+    background: var(--bg-color);
+    opacity: .8;
+}
 .about {
     display: flex;
     justify-content: center;
@@ -862,6 +925,10 @@ span {
     width: 50%;
 }
 
+.animate.target-img {
+    width: 50%;
+}
+
 .logo .animate,
 .navbar .animate,
 #menu-icon .animate,
@@ -871,6 +938,11 @@ span {
 
 }
 
+.target.show-animate .animate {
+    animation: showRight 1s ease forwards;
+    animation-delay: calc(.3s * var(--i));
+
+}
 .animate.scroll {
     transition: 1s ease;
     transition-delay: calc(.3s / var(--i));
@@ -886,6 +958,7 @@ section:nth-child(odd) .animate.scroll,
     width: 105%;
 }
 
+.target.show-animate .animate.scroll,
 .about.show-animate .animate.scroll,
 .education.show-animate .animate.scroll,
 .skills.show-animate .animate.scroll,
@@ -915,6 +988,10 @@ section:nth-child(odd) .animate.scroll,
         padding: 0 4%;
     }
 
+     .target {
+        padding: 0 4%;
+    }
+
     .footer {
             padding: 2rem 4%;
     }
@@ -922,6 +999,12 @@ section:nth-child(odd) .animate.scroll,
 
 @media (max-width: 850px) {
     .animate.home-img {
+        width: 55%;
+    }
+}
+
+@media (max-width: 850px) {
+    .animate.target-img {
         width: 55%;
     }
 }
@@ -989,6 +1072,12 @@ section:nth-child(odd) .animate.scroll,
         background: var(--bg-color);
         opacity: .6;
     }
+
+     .target-imgHover {
+        pointer-events: none;
+        background: var(--bg-color);
+        opacity: .6;
+    }
 }
 
 @media (max-width: 520px) {
@@ -1011,8 +1100,51 @@ section:nth-child(odd) .animate.scroll,
     }
 }
 
+@media (max-width: 520px) {
+    html {
+        font-size: 50%;
+    }
+
+    .target-content h1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .target-sci {
+        width: 160px;
+    }
+
+    .target-sci a {
+        width: 38px;
+        height: 38px;
+    }
+}
+
 @media (max-width: 462px) {
     .home-content h1 {
+        font-size: 5.2rem;
+    }
+
+    .education {
+        padding: 10rem 4% 5rem 5%;
+    }
+
+    .contact form .input-box .input-field {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 462px) {
+    .target-content h1 {
         font-size: 5.2rem;
     }
 
@@ -1051,6 +1183,23 @@ section:nth-child(odd) .animate.scroll,
     }
 }
 
+@media (max-width: 371px) {
+    .target {
+        justify-content: center;
+    }
+
+    .target-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .target-content h1 {
+        font-size: 5rem;
+    }
+}
+
 /* KEYFRAMES ANIMATION */
 
 @keyframes homeBgText {
@@ -1067,7 +1216,42 @@ section:nth-child(odd) .animate.scroll,
     }
 }
 
+@keyframes targetBgText {
+
+    0%,
+    10%,
+    100% {
+        background-position: -33rem 0;
+    }
+
+    65%,
+    85% {
+        background-position: 0 0;
+    }
+}
+
 @keyframes homeCursorText {
+
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+
+    65%,
+    78%,
+    85% {
+        width: 100%;
+        opacity: 1;
+    }
+
+    75%,
+    81% {
+        opacity: 0;
+    }
+}
+
+@keyframes targetCursorText {
 
     0%,
     10%,
