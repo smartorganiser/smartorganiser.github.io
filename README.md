@@ -1,1 +1,1 @@
-# Smart Desk Organizer
+# Smart Organizer
