@@ -938,7 +938,7 @@ span {
 
 }
 
-.target.show-animate .animate {
+.target.shows-animate .animate {
     animation: showRight 1s ease forwards;
     animation-delay: calc(.3s * var(--i));
 
@@ -1125,26 +1125,7 @@ section:nth-child(odd) .animate.scroll,
         font-size: 5.2rem;
     }
 
-    .education {
-        padding: 10rem 4% 5rem 5%;
-    }
-
-    .contact form .input-box .input-field {
-        width: 100%;
-    }
-
-    .footer {
-        flex-direction: column-reverse;
-    }
-
-    .footer p {
-        margin-top: 2rem;
-        text-align: center;
-    }
-}
-
-@media (max-width: 462px) {
-    .target-content h1 {
+     .target-content h1 {
         font-size: 5.2rem;
     }
 
@@ -1165,6 +1146,7 @@ section:nth-child(odd) .animate.scroll,
         text-align: center;
     }
 }
+
 
 @media (max-width: 371px) {
     .home {
