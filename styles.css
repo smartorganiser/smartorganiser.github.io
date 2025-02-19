@@ -94,7 +94,21 @@ section {
     background-position: center;
 }
 
+.target {
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
+    background: url('./re1.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .home-content {
+    max-width: 60rem;
+    z-index: 99;
+}
+
+.target-content {
     max-width: 60rem;
     z-index: 99;
 }
@@ -107,12 +121,29 @@ section {
     line-height: 1.3;
 }
 
+.target-content h1 {
+    position: relative;
+    display: inline-block;
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
 .home-content h1 span {
+    color: var(--text-color);
+}
+
+.target-content h1 span {
     color: var(--text-color);
 }
 
 
 .home-content .text-animate {
+    position: relative;
+    width: 18.4rem;
+}
+
+.target-content .text-animate {
     position: relative;
     width: 18.4rem;
 }
@@ -128,7 +159,23 @@ section {
     background-position: -33rem 0;
 }
 
+.target-content .text-animate h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: .7px var(--main-color);
+    background-image: linear-gradient(var(--main-color), var(--main-color));
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -33rem 0;
+}
+
 .home.show-animate .home-content .text-animate h3 {
+    animation: homeBgText 6s linear infinite;
+    animation-delay: 2s;
+}
+
+.target.show-animate .home-content .text-animate h3 {
     animation: homeBgText 6s linear infinite;
     animation-delay: 2s;
 }
@@ -144,7 +191,23 @@ section {
     z-index: -1;
 }
 
+.target-content .text-animate h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right: 2px solid var(--main-color);
+    z-index: -1;
+}
+
 .home.show-animate .home-content .text-animate h3::before {
+    animation: homeCursorText 6s linear infinite;
+    animation-delay: 2s;
+}
+
+.target.show-animate .home-content .text-animate h3::before {
     animation: homeCursorText 6s linear infinite;
     animation-delay: 2s;
 }
@@ -155,7 +218,20 @@ section {
     margin: 2rem 0 4rem;
 }
 
+.target-content p {
+    position: relative;
+    font-size: 1.6rem;
+    margin: 2rem 0 4rem;
+}
+
 .home-content h5 {
+    color: var(--main-color);
+    position: relative;
+    font-size: 1.9rem;
+    margin: 2rem 0 4rem;
+}
+
+.target-content h5 {
     color: var(--main-color);
     position: relative;
     font-size: 1.9rem;
@@ -230,7 +306,32 @@ section {
     justify-content: space-between;
 }
 
+.target-sci {
+    position: absolute;
+    bottom: 4rem;
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.target-sci a {
     position: relative;
     display: inline-flex;
     justify-content: center;
@@ -251,7 +352,23 @@ section {
     color: var(--bg-color);
 }
 
+.target-sci a:hover {
+    color: var(--bg-color);
+}
+
 .home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--main-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.target-sci a::before {
     content: '';
     position: absolute;
     top: 0;
@@ -267,6 +384,10 @@ section {
     width: 100%;
 }
 
+.target-sci a:hover::before {
+    width: 100%;
+}
+
 .home-imgHover {
     position: absolute;
     top: 0;
@@ -277,7 +398,22 @@ section {
     transition: 3s;
 }
 
+.target-imgHover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
+}
+
 .home-imgHover:hover {
+    background: var(--bg-color);
+    opacity: .8;
+}
+
+.target-imgHover:hover {
     background: var(--bg-color);
     opacity: .8;
 }
