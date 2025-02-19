@@ -97,6 +97,25 @@
         <div class="target-imgHover"></div>
         <span class="animate target-img" style="--i:7;"></span>
 
+        <div class="platform-img">
+            <img id="platform-image" src="./robot.png" alt="Platform Image" style="display: none">
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const platformButton = document.getElementById('btn-პლატფორმა');
+                const platformImage = document.getElementById('platform-image');
+    
+                platformButton.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent default anchor behavior
+                    if (platformImage.style.display === 'none' || platformImage.style.display === '') {
+                        platformImage.style.display = 'block'; // Show the image
+                    } else {
+                        platformImage.style.display = 'none'; // Hide the image
+                    }
+                });
+            });
+        </script>
+
        
     </section>
 
